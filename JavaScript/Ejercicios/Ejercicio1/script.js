@@ -8,7 +8,7 @@
 * Ejercicio Guiado
 * -> Arrays y condicionales
 */ 
-
+/*
 // Vamos a declarar 3 arrays y queremos saber la longitud de cada uno de ellos.
 var avengers = ['Spiderman', 'AntMan', 'Hulk'];
 var mutants = ['Wolverine', 'Ciclops', 'Storm'];
@@ -63,7 +63,7 @@ console.log(media(avengersLength,mutantsLength, defendersLength));
 * Ejercicio 1
 * → Devuelve el string de mayor longitud
 */
-
+/*
 // Declaramos un array -> Cambiar nombre de myArray al vuestro e introducimos valores
 var myArray = [];
 // Declaramos una variable donde guardaremos el string mayor de nuestro myArray
@@ -84,26 +84,50 @@ console.log(longestElement);
 */
 
 // PRIMERA ITERACIÓN: Declara variable age
-
+let age = 15
+let puedeConducir
 // SEGUNDA ITERACIÓN: Comprobar con un condicional si puedes conducir
-
+if(age >= 18){
+  puedeConducir = true
+}
 // TERCERA ITERACIÓN: Mostrar si puede conducir o no
-
+if (puedeConducir) {
+  console.log("Enhorabuena, puedes conducir")
+} else {
+  console.log("Lo siento, tendrás que esperar a cumplir más años")
+}
 /* 
 * Ejercicio 3
 * → Quiero comer Pizza
 */
 
 // PRIMERA ITERACIÓN: Declara variable con un listado de comidas
-
+let listaComida = ["hamburguesa", "patatas", "pescado", "pizza", "pollo"]
 // SEGUNDA ITERACIÓN: Recorrer el listado de comidas
+let hayPizza = false;
+for (let i = 0; i < listaComida.length - 1; i++) {
+  console.log(listaComida[i])
+  if(listaComida[i] == "pizza"){
+    hayPizza = true
+  }
+}
 
-// TERCERA ITERACIÓN: Si hay pizza me sirves pizza 
+// TERCERA ITERACIÓN: Si hay pizza me sirves pizza
+if (hayPizza) {
+  console.log("Aquí tienes tu pizza")
+} else {
+  console.log("No tenemos pizza")
+}
 
 // CUARTA ITERACIÓN: Declara variable estoy a dieta
-
+let estoyADieta = true
 // QUINTA ITERACIÓN: Cuando quiera pizza me sirves brocoli
-
+let comida = prompt("Dime qué quieres comer", "")
+if(comida == "pizza" && estoyADieta == true){
+  console.log("Lo siento, pero solo te podemos dar brócoli")
+} else if(comida == "pizza" && estoyADieta == false){
+  console.log("Aquí tienes tu pizza")
+}
 /* 
 * Ejercicio 3
 * → E-L-R-A-Y-O-E-S-E-L-M-E-J-O-R
@@ -152,7 +176,7 @@ console.log(longestElement);
 * → Palíndromo: Esta función debe recibir un string y decir si es un palíndromo. 
 * Un palíndromo es una frase que se lee igual al derecho que al revés.
 */
-
+/*
 var palindrome = (word) => {
     // PRIMERA ITERACIÓN: declarar variable y pasarle el valor + toUpperCae + Eliminar espacios replace MDN
     var initialWord = word; // + toUpperCae + replace;
@@ -163,3 +187,4 @@ var palindrome = (word) => {
 }
 // CUARTA ITERACIÓN: Llamar a la función palindrome pasando una palabra o frase- 'Yo soy'
 console.log(palindrome('Yo soy') ? 'es palíndromo' : 'NO es palíndromo');
+*/
