@@ -1,0 +1,23 @@
+$background-color : pink;
+$secondary-color: black;
+$color-title : rgb(114, 35, 153);
+
+// recibe un parametro, hace referencia a una variable con cualquier nombre
+
+@mixin boxConfig ($color-shadow, $color-backg){
+    background-color: $color-backg;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px $color-shadow ;
+}
+
+@mixin table ($width-card){
+    @media (min-width : 768px) {
+        width: $width-card;
+    }
+}
+
+@mixin desktop ($width-card) {
+    @media (min-width : 1200px) {
+        width: $width-card;
+    }
+}

@@ -1,0 +1,21 @@
+/*@import _reset
+@import _var*/
+
+$background-color: pink;
+$secondary-color: rgb(110, 200, 50);
+
+h1{
+    color: $secondary-color;
+    background-color: $background-color;
+    border: 3px solid black;
+}
+
+@mixin boxConfig($color, $colorShadow, $colorBackground) {
+    background-color: aqua;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.patata{
+    @include boxConfig()
+}

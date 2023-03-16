@@ -1,0 +1,30 @@
+.cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    h2 {
+        width: 100%;
+        color: red;
+    }
+
+    &_element{
+        @include boxConfig (black, grey);
+        width: 90%;
+        margin-bottom: 10px;
+
+        @include table(45%);
+
+        @include desktop(23%);
+
+        &-img{
+            width: 100%;
+        }
+
+        &-title{
+            font-weight: bold;
+            color: $color-title;
+            font-size: 20px;
+        }
+    }
+}
